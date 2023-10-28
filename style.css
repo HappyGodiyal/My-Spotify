@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Red+Hat+Display:wght@500&family=Roboto:wght@300;400&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body ,.main{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    background-color: black;
+    color: white;
+}
+.nav img{
+    height: 60px;
+    margin-left: 2vw;
+}
+.nav h2{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 4px;
+    margin-left: 2vw;
+    text-decoration: none;
+    background-image: linear-gradient(#1ed760, #1ed760);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+.nav h2:hover{
+    background-size: 100% 0.1em;
+    
+}
+/* a {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  } */
+  
+  /* a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  } */
+  
+  /* a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
+  } */
+.nav h1{
+    font-weight: 400;
+
+    background-image: linear-gradient(
+      to right,
+      #1ed760,
+      #1ed760 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s ease-in-out;
+
+}
+.nav h1:before {
+    content: '';
+    background: #1ed760;
+    transition: all 0.6s ease-in-out;
+  }
+.nav h1:hover{
+    background-position: 0;
+}
+
+.hero{
+    height: calc(100% - 160px);
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ed760;
+}
+.home{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 90%;
+    width: 60%;
+    text-align: center;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.home h1{
+    color: white;
+    font-weight: 200;
+    margin: 4vh;
+}
+.home h1 span{
+    font-weight: 400;
+}
+.container{
+    height: 78%;
+    /* background-color: brown; */
+    display: flex;
+}
+.box1{
+    /* background-color: blue; */
+    width: 50%;
+    height: 100%;
+}
+.box1 .song{
+    height: 15%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin: 13px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+}
+
+.song img{
+    height: 80%;
+    border-radius: 5px;
+    /* margin: 0 1.5vw; */
+}
+.song p{
+    font-size: 1.4vw;
+}
+.song i{
+    font-size: 1.8vw;
+}
+
+.box2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box2 .content{
+    height: 70%;
+    width: 70%;
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    border: none;
+}
+
+.bottom input{
+    width: 80vw;
+    height: 5px;
+    margin-top: 3vh;
+}
+.bottom i{
+    font-size: 4vh;
+    color: white;
+    position: relative;
+    transform: translate(-42vw,128%);
+}
+.bottom{
+    height: 90px;
+    background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+}
+i{
+    cursor: pointer;
+}
+.ri-pause-line{
+    display: none;
+}
+
+
+
+
+@media (max-width:600px) {
+
+    .nav img{
+        height: 35px;
+    }
+    .nav h1{
+        font-size: 3vh;
+    }
+    .nav h2{
+        font-size: 2vh;
+    }
+    .nav #home{
+        margin-left: 35vw;
+    }
+    .home{
+        width: 80vw;
+    }
+    .home h1 {
+        font-size: 2.5vh;
+    }
+    .home span{
+        font-size: 3.2vh;
+    }
+    .box2{
+        display: none;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box1 .song{
+        width: 90%;
+    }
+    .song p{
+        font-size: 1.8vh;
+    }
+    .song i{
+        font-size: 2vh;
+    }
+    .bottom{
+       display: flex;
+       justify-content: center;
+       /* background-color: #1ed760; */
+    }
+    .bottom input{
+        width: 50%;
+        margin-left: 25vw;
+    }
+    .bottom i{
+        transform: translate(-150px, 30px);
+    }
+    .main{
+        overflow: hidden;
+    }
+
+}
